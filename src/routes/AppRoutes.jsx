@@ -1,4 +1,8 @@
-import { Routes, Route } from "react-router-dom";
+  import {
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { lazy, Suspense } from "react";
 
 import Loader from "../components/Loader";
@@ -79,10 +83,20 @@ function AppRoutes() {
     <Suspense fallback={<Loader />}>
       <Routes>
 
-        <Route
-          path="/login"
-          element={<LoginPage />}
-        />
+<Route
+  path="/"
+  element={
+    <Navigate
+      to="/login"
+      replace
+    />
+  }
+/>
+
+<Route
+  path="/login"
+  element={<LoginPage />}
+/>
 
         <Route
           path="/forgot-password"
@@ -325,7 +339,15 @@ function AppRoutes() {
             </ProtectedRoute>
           }
         />
-
+<Route
+  path="*"
+  element={
+    <Navigate
+      to="/login"
+      replace
+    />
+  }
+/>
       </Routes>
     </Suspense>
   );
