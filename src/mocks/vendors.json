@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "TechNova Solutions",
+    "status": "Active",
+    "risk": "Low",
+    "contact": "Rahul Sharma",
+    "email": "rahul@technova.com",
+    "document": "ISO Certification",
+    "history": "Vendor onboarded in 2023"
+  },
+  {
+    "id": 2,
+    "name": "CloudAxis Pvt Ltd",
+    "status": "Active",
+    "risk": "Medium",
+    "contact": "Amit Verma",
+    "email": "amit@cloudaxis.com",
+    "document": "GST Registration",
+    "history": "Risk review completed"
+  },
+  {
+    "id": 3,
+    "name": "DataSphere Systems",
+    "status": "Inactive",
+    "risk": "High",
+    "contact": "Priya Kapoor",
+    "email": "priya@datasphere.com",
+    "document": "Compliance Certificate",
+    "history": "Compliance issue detected"
+  }
+]

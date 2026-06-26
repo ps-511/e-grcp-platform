@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "request": "Laptop Procurement",
+    "department": "IT",
+    "status": "Pending"
+  },
+  {
+    "id": 2,
+    "request": "Software License Renewal",
+    "department": "Finance",
+    "status": "Approved"
+  },
+  {
+    "id": 3,
+    "request": "Office Furniture",
+    "department": "HR",
+    "status": "Rejected"
+  },
+  {
+    "id": 4,
+    "request": "Cloud Infrastructure",
+    "department": "Operations",
+    "status": "Escalated"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Admin User",
+    "email": "admin@egrcp.com",
+    "password": "admin123",
+    "role": "Administrator"
+  },
+  {
+    "id": 2,
+    "name": "Auditor User",
+    "email": "auditor@egrcp.com",
+    "password": "audit123",
+    "role": "Auditor"
+  },
+  {
+    "id": 3,
+    "name": "Compliance User",
+    "email": "compliance@egrcp.com",
+    "password": "comp123",
+    "role": "Compliance Officer"
+  },
+  {
+    "id": 4,
+    "name": "Manager User",
+    "email": "manager@egrcp.com",
+    "password": "manager123",
+    "role": "Procurement Manager"
+  },
+    {
+    "id": 5,
+    "name": "New User",
+    "email": "ps@eg.com",
+    "password": "ps1234",
+    "role": "Procurement Manager"
+  }
+]

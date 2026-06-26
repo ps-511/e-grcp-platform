@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "category": "Financial",
+    "level": "High",
+    "count": 8
+  },
+  {
+    "id": 2,
+    "category": "Compliance",
+    "level": "Medium",
+    "count": 15
+  },
+  {
+    "id": 3,
+    "category": "Operational",
+    "level": "Low",
+    "count": 25
+  }
+]

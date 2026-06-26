@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "message": "Vendor approval pending",
+    "priority": "High",
+    "read": false
+  },
+  {
+    "id": 2,
+    "message": "Compliance document expired",
+    "priority": "Critical",
+    "read": false
+  },
+  {
+    "id": 3,
+    "message": "Audit report generated",
+    "priority": "Medium",
+    "read": true
+  }
+]

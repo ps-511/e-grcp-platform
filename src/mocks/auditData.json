@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "activity": "Vendor Approved",
+    "user": "Admin",
+    "date": "2026-06-01",
+    "type": "Audit History"
+  },
+  {
+    "id": 2,
+    "activity": "Risk Assessment Updated",
+    "user": "Compliance Officer",
+    "date": "2026-06-03",
+    "type": "User Activity"
+  },
+  {
+    "id": 3,
+    "activity": "System Backup Completed",
+    "user": "System",
+    "date": "2026-06-05",
+    "type": "System Log"
+  }
+]
