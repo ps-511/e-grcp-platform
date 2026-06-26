@@ -8,6 +8,7 @@ import {
   IconButton,
   Switch,
   Avatar,
+  Button,
 } from "@mui/material";
 
 import { useNavigate } from "react-router-dom";
@@ -23,14 +24,22 @@ import {
 import {
   setDarkMode,
 } from "../store/slices/uiSlice";
+import {
+  logout,
+} from "../store/slices/authSlice";
 
+import LogoutIcon from "@mui/icons-material/Logout";
 function Header() {
   const dispatch =
     useDispatch();
 
   const navigate =
     useNavigate();
+const handleLogout = () => {
+  dispatch(logout());
 
+  navigate("/login");
+};
   const [search, setSearch] =
     useState("");
 
@@ -226,24 +235,30 @@ function Header() {
           }
         />
 
-        <Avatar
-          sx={{
-            ml: 2,
-          }}
-        >
-          {user?.name?.charAt(
-            0
-          ) || "A"}
-        </Avatar>
+       <Avatar
+  sx={{
+    ml: 2,
+  }}
+>
+  {user?.name?.charAt(0) || "A"}
+</Avatar>
 
-        <Typography
-          sx={{
-            ml: 1,
-          }}
-        >
-          {user?.name ||
-            "Admin"}
-        </Typography>
+<Typography
+  sx={{
+    ml: 1,
+    mr: 2,
+  }}
+>
+  {user?.name || "Admin"}
+</Typography>
+
+<Button
+  color="inherit"
+  startIcon={<LogoutIcon />}
+  onClick={handleLogout}
+>
+  Logout
+</Button>
       </Toolbar>
     </AppBar>
   );
