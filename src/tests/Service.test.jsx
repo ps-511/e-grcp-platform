@@ -1,4 +1,3 @@
-import { describe, test, expect } from "vitest";
 import MockAdapter from "axios-mock-adapter";
 
 import apiClient from "../services/apiClient";
@@ -10,7 +9,13 @@ import {
 const mock = new MockAdapter(apiClient);
 
 describe("Request Service", () => {
+
+  afterEach(() => {
+    mock.reset();
+  });
+
   test("should fetch posts", async () => {
+
     mock.onGet("/posts").reply(200, [
       {
         id: 1,
@@ -22,9 +27,11 @@ describe("Request Service", () => {
 
     expect(data.length).toBe(1);
     expect(data[0].title).toBe("Test Post");
+
   });
 
   test("should fetch users", async () => {
+
     mock.onGet("/users").reply(200, [
       {
         id: 1,
@@ -36,5 +43,7 @@ describe("Request Service", () => {
 
     expect(data.length).toBe(1);
     expect(data[0].name).toBe("Admin");
+
   });
+
 });
