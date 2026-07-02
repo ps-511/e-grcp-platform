@@ -7,7 +7,8 @@ import {
   persistReducer,
 } from "redux-persist";
 
-import storage from "redux-persist/lib/storage";
+import storageModule from "redux-persist/lib/storage";
+
 
 import authReducer from "./slices/authSlice";
 import dashboardReducer from "./slices/dashboardSlice";
@@ -19,7 +20,14 @@ import complianceReducer from "./slices/complianceSlice";
 import auditReducer from "./slices/auditSlice";
 import notificationReducer from "./slices/notificationSlice";
 import uiReducer from "./slices/uiSlice";
+const storage = storageModule.default ?? storageModule;
 
+console.log(storage);
+console.log(Object.keys(storage));
+console.log(typeof storage.getItem);
+console.log(typeof storage.setItem);
+console.log(storage.default);
+console.log(storage);
 const authPersistConfig = {
   key: "auth",
   storage,
